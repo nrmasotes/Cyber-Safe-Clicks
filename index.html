@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>URL Scanner</title>
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <img src="shield_check.png" alt="Our Logo">
+            <a href="#" class="logo">Cyber Safe Clicks</a>
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recent.html">Recent Scans</a></li>
+        </ul>
+    </header>
+
+    <div class="submission-container">
+        <label for="submission-text" class="submission-label">Enter URL Here:</label>
+        <div class="input-button-container">
+            <div class="input-container">
+                <form method="POST" action="/scan">
+                    <input type="text" name="url" class="submission-text" id="url" required></input>
+                    <input type="submit" class="confirmation-button" value="Scan"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
